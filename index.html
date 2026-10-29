@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Ярослава (Atlix_TT) — начинающий специалист в 1С-разработке, системном администрировании и разработке ПО. УРСЭИ, прикладная информатика.">
+  <meta name="author" content="Ярослав (Atlix_TT)">
+  <title>Ярослав | Atlix_TT — Портфолио</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==========================================
+       ШАПКА С НАВИГАЦИЕЙ
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="header__logo">Atlix_TT</a>
+
+      <nav class="header__nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link is-active" data-section="hero">Главная</a></li>
+          <li><a href="#about" class="nav__link" data-section="about">Обо мне</a></li>
+          <li><a href="#skills" class="nav__link" data-section="skills">Навыки</a></li>
+          <li><a href="#works" class="nav__link" data-section="works">Работы</a></li>
+          <li><a href="#reviews" class="nav__link" data-section="reviews">Отзывы</a></li>
+          <li><a href="#process" class="nav__link" data-section="process">Процесс</a></li>
+          <li><a href="#contacts" class="nav__link" data-section="contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Переключатель темы -->
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Переключить тему оформления">
+          <!-- Солнце (показывается в тёмной теме) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Луна (показывается в светлой теме) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Бургер-кнопка (мобильная) -->
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню навигации" aria-expanded="false" aria-controls="nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         1. HERO — ГЛАВНАЯ СЕКЦИЯ
+         ========================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="hero__nickname">@Atlix_TT</span>
+          <h1 class="hero__title">Привет, я Ярослав</h1>
+          <p class="hero__subtitle">
+            Начинающий специалист: 1С&#8209;разработка&nbsp;• системное администрирование&nbsp;• разработка&nbsp;ПО
+          </p>
+          <div class="hero__buttons">
+            <a href="#works" class="btn btn--primary">Мои работы</a>
+            <a href="#contacts" class="btn btn--outline">Контакты</a>
+          </div>
+        </div>
+
+        <!--
+          TODO: Заменить заглушку на реальное фото.
+          Как заменить:
+          1. Положи фото в assets/img/photo.jpg
+          2. Замени содержимое <div class="hero__photo"> на:
+             <img src="assets/img/photo.jpg" alt="Фото Ярослава">
+          3. Убери текст «Я» из div
+        -->
+        <div class="hero__photo" aria-label="Фото Ярослава (заглушка)">Я</div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         2. ОБО МНЕ
+         ========================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <span class="section__label">О себе</span>
+        <h2 class="section__title animate-on-scroll">Обо мне</h2>
+
+        <div class="about__content">
+          <!-- Образование -->
+          <div class="about__card animate-on-scroll">
+            <div class="about__card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+              </svg>
+            </div>
+            <h3>Образование</h3>
+            <p>Учусь в УРСЭИ по специальности «Прикладная информатика». Дополнительно прошёл курсы по Unity — разработка приложений. Начинающий специалист, ищу первый опыт.</p>
+          </div>
+
+          <!-- Планы -->
+          <div class="about__card animate-on-scroll">
+            <div class="about__card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Планы после института</h3>
+            <p>Основное направление — 1С&#8209;разработка. Параллельно развиваюсь в системном администрировании и разработке ПО. Хочу стать универсальным специалистом, который может и настроить инфраструктуру, и написать полезный софт.</p>
+          </div>
+
+          <!-- Увлечения -->
+          <div class="about__card animate-on-scroll">
+            <div class="about__card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <h3>Увлечения</h3>
+            <p>Компьютерные игры и книги — для перезагрузки. Раньше занимался тхэквондо (чёрный пояс). Разбираюсь в механике: квадроциклы, мотоциклы, бытовая техника — люблю, когда можно разобрать и понять, как устроено.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. НАВЫКИ
+         ========================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <span class="section__label">Компетенции</span>
+        <h2 class="section__title animate-on-scroll">Навыки</h2>
+
+        <div class="skills__groups">
+          <!-- Группа: Языки программирования -->
+          <div class="skills__group animate-on-scroll">
+            <h3 class="skills__group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+              Языки программирования
+            </h3>
+            <div class="skills__list">
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">Python</span>
+                  <span class="skill__level">Средний</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 60%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">C#</span>
+                  <span class="skill__level">Начальный</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 25%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">C++</span>
+                  <span class="skill__level">Начальный</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 25%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Группа: Веб-технологии -->
+          <div class="skills__group animate-on-scroll">
+            <h3 class="skills__group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 12h5l2-9 6 18 2-9h5"/>
+              </svg>
+              Разметка и стили
+            </h3>
+            <div class="skills__list">
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">HTML</span>
+                  <span class="skill__level">Средний+</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 70%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">CSS</span>
+                  <span class="skill__level">Средний+</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Группа: Платформы и инструменты -->
+          <div class="skills__group animate-on-scroll">
+            <h3 class="skills__group-title">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              Платформы и инструменты
+            </h3>
+            <div class="skills__list">
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">1С</span>
+                  <span class="skill__level">Начальный-средний</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 40%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="skill__header">
+                  <span class="skill__name">Unity</span>
+                  <span class="skill__level">Курсы</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__fill" style="--level: 30%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. РАБОТЫ (ПРОЕКТЫ)
+         ========================================== -->
+    <section class="section" id="works">
+      <div class="container">
+        <span class="section__label">Портфолио</span>
+        <h2 class="section__title animate-on-scroll">Мои работы</h2>
+
+        <div class="works__grid">
+          <!-- Курсовая: Учёт детей в детском саду -->
+          <div class="work-card animate-on-scroll" data-project="kindergarten" tabindex="0" role="button" aria-label="Открыть подробности проекта «Учёт детей в детском саду»">
+            <div class="work-card__image">
+              <img src="assets/works/ЛицоПриложения.png" alt="Главная панель приложения «Учёт детей в детском саду»">
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Курсовая работа</span>
+              <h3 class="work-card__title">Учёт детей в детском саду</h3>
+              <p class="work-card__desc">Десктопное приложение для управления данными детского сада: дети, группы, воспитатели, посещаемость.</p>
+            </div>
+          </div>
+
+          <!-- TODO: Заглушка — учебный проект на Unity -->
+          <div class="work-card work-card--soon animate-on-scroll" aria-label="Проект в разработке">
+            <div class="work-card__image work-card__image--placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Скоро</span>
+              <h3 class="work-card__title">Учебный проект на Unity</h3>
+              <p class="work-card__desc">Приложение, разрабатываемое в рамках курсов по Unity. Подробности появятся позже.</p>
+            </div>
+          </div>
+
+          <!-- TODO: Заглушка — будущий проект -->
+          <div class="work-card work-card--soon animate-on-scroll" aria-label="Проект в разработке">
+            <div class="work-card__image work-card__image--placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="16"/>
+                <line x1="8" y1="12" x2="16" y2="12"/>
+              </svg>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Скоро</span>
+              <h3 class="work-card__title">Новый проект</h3>
+              <p class="work-card__desc">Здесь появится следующий проект. Следите за обновлениями!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. ОТЗЫВЫ
+         TODO: Заменить вымышленные отзывы на реальные
+         ========================================== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <span class="section__label">Обратная связь</span>
+        <h2 class="section__title animate-on-scroll">Отзывы друзей</h2>
+
+        <div class="reviews__grid">
+          <!-- TODO: заменить на реальный отзыв -->
+          <div class="review-card animate-on-scroll">
+            <p class="review-card__text">Ярослав всегда подходит к задачам ответственно. Помогал мне разобраться с Python, объясняет доступно и терпеливо. Уверен, что у него впереди классная карьера!</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">АК</div>
+              <div>
+                <div class="review-card__name">Алексей К.</div>
+                <div class="review-card__role">Одногруппник</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO: заменить на реальный отзыв -->
+          <div class="review-card animate-on-scroll">
+            <p class="review-card__text">Работали вместе над групповым проектом. Ярослав взял на себя самую сложную часть и сделал всё в срок. Надёжный человек, с которым приятно работать в команде.</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">МС</div>
+              <div>
+                <div class="review-card__name">Мария С.</div>
+                <div class="review-card__role">Одногруппница</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO: заменить на реальный отзыв -->
+          <div class="review-card animate-on-scroll">
+            <p class="review-card__text">Знаю Ярослава ещё со школы. Целеустремлённый и увлечённый — если берётся за что-то, то разбирается до конца. Плюс чёрный пояс по тхэквондо — это говорит о характере!</p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">ДВ</div>
+              <div>
+                <div class="review-card__name">Дмитрий В.</div>
+                <div class="review-card__role">Друг</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. КАК СОЗДАВАЛСЯ САЙТ (ПРОЦЕСС С ИИ)
+         Данные загружаются из js/ai-log-data.js
+         ========================================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <span class="section__label">За кулисами</span>
+        <h2 class="section__title animate-on-scroll">Как создавался сайт</h2>
+        <p class="section__desc animate-on-scroll">Этот сайт сделан с помощью ИИ-ассистента. Ниже — подробный журнал работы: какие нейросети использовались, что хотели получить, и как всё прошло на самом деле.</p>
+
+        <!-- Таблица моделей — заполняется из JS -->
+        <div class="animate-on-scroll">
+          <h3 style="margin-bottom: var(--space-md)">Какие нейросети использованы</h3>
+          <div class="process__table-wrapper" id="models-table">
+            <!-- Заполняется из js/ai-log-data.js -->
+          </div>
+        </div>
+
+        <!-- Таймлайн шагов — заполняется из JS -->
+        <div class="animate-on-scroll" style="margin-top: var(--space-2xl)">
+          <h3 style="margin-bottom: var(--space-lg)">Шаги работы</h3>
+          <div class="timeline" id="timeline">
+            <!-- Заполняется из js/ai-log-data.js -->
+          </div>
+        </div>
+
+        <!-- Итоги — заполняются из JS -->
+        <div id="process-summary">
+          <!-- Заполняется из js/ai-log-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. КОНТАКТЫ
+         TODO: Заменить заглушки на реальные ссылки
+         ========================================== -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <span class="section__label">Связаться</span>
+        <h2 class="section__title animate-on-scroll">Контакты</h2>
+
+        <div class="contacts__grid">
+          <!-- TODO: заменить # на реальную ссылку Telegram -->
+          <a href="#" class="contact-link animate-on-scroll" aria-label="Написать в Telegram">
+            <div class="contact-link__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-link__label">Telegram</div>
+              <div class="contact-link__value">TODO: @username</div>
+            </div>
+          </a>
+
+          <!-- TODO: заменить # на реальный mailto -->
+          <a href="#" class="contact-link animate-on-scroll" aria-label="Написать на почту">
+            <div class="contact-link__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 4l-10 8L2 4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-link__label">Email</div>
+              <div class="contact-link__value">TODO: email@example.com</div>
+            </div>
+          </a>
+
+          <!-- TODO: заменить # на реальный GitHub -->
+          <a href="#" class="contact-link animate-on-scroll" aria-label="Профиль на GitHub">
+            <div class="contact-link__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-link__label">GitHub</div>
+              <div class="contact-link__value">TODO: github.com/username</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       ПОДВАЛ
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">© 2026 Ярослав (Atlix_TT). Учебная работа, УРСЭИ.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       МОДАЛЬНОЕ ОКНО (для проектов)
+       ========================================== -->
+  <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" id="modal-close" type="button" aria-label="Закрыть окно">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal__header">
+        <span class="modal__tag" id="modal-tag"></span>
+        <h2 class="modal__title" id="modal-title"></h2>
+      </div>
+      <div class="modal__body">
+        <div class="modal__tech" id="modal-tech"></div>
+        <div class="modal__features" id="modal-features">
+          <h4>Возможности</h4>
+          <ul id="modal-features-list"></ul>
+        </div>
+        <div class="modal__gallery" id="modal-gallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/ai-log-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
